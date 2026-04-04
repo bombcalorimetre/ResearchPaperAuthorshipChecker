@@ -11,11 +11,7 @@
       "status": "active",
       "dueDate": "2026-02-15T23:59:00Z",
       "createdAt": "2025-11-01T10:00:00Z",
-      "rubrics": [
-        { "criterion": "Problem statement uniqueness and description", "marks": 2 },
-        { "criterion": "ER Diagram correctness (entities, attributes, cardinalities, participation)", "marks": 5 },
-        { "criterion": "ER to Relational Model conversion correctness", "marks": 3 }
-      ]
+      "content": "The Entity-Relationship model is a powerful tool for conceptual database design. It allows us to represent real-world entities, their attributes, and the relationships between them in a structured manner. Strong entities are those that have a primary key and can exist independently, while weak entities depend on strong entities for their identification and existence. When converting an ER model to a relational schema, each entity becomes a table, attributes become columns, and relationships are represented using foreign keys and junction tables. The primary key serves as a unique identifier for each row in the table, ensuring data integrity and enabling efficient lookups. Many-to-many relationships require junction tables with composite foreign keys that reference both related entities. This conversion process must carefully preserve all the information and constraints from the original ER diagram to maintain data consistency and relationships in the relational database."
     },
     {
       "id": "PAP002",
@@ -28,10 +24,7 @@
       "status": "active",
       "dueDate": "2026-03-15T23:59:00Z",
       "createdAt": "2025-12-01T10:00:00Z",
-      "rubrics": [
-        { "criterion": "Normalization steps and correctness", "marks": 5 },
-        { "criterion": "SQL query accuracy and completeness", "marks": 5 }
-      ]
+      "content": "Database normalization is a systematic process of organizing data to minimize redundancy and improve data integrity. The first normal form (1NF) requires that all attributes contain atomic values with no repeating groups. The second normal form (2NF) builds on 1NF by ensuring that all non-key attributes are fully dependent on the entire primary key, eliminating partial dependencies. The third normal form (3NF) removes transitive dependencies where non-key attributes depend on other non-key attributes. SQL queries are the primary means of interacting with relational databases. SELECT statements retrieve data with WHERE clauses for filtering, JOIN operations for combining multiple tables, and GROUP BY for aggregation. INSERT statements add new records, UPDATE statements modify existing records, and DELETE statements remove data. Proper indexing on frequently queried columns significantly improves query performance. The use of transactions ensures data consistency when performing multiple related operations that must all succeed or all fail together."
     },
     {
       "id": "PAP003",
@@ -44,10 +37,7 @@
       "status": "draft",
       "dueDate": "2026-02-20T23:59:00Z",
       "createdAt": "2025-12-10T10:00:00Z",
-      "rubrics": [
-        { "criterion": "Algorithm implementation correctness", "marks": 6 },
-        { "criterion": "Time complexity analysis", "marks": 4 }
-      ]
+      "content": "Dijkstra's algorithm is a greedy algorithm for finding the shortest path between vertices in a weighted graph with non-negative edge weights. The algorithm maintains a set of visited vertices and repeatedly selects the unvisited vertex with the minimum distance from the source. Using a priority queue implementation with a binary heap, the time complexity is O((V+E)log V) where V is the number of vertices and E is the number of edges. The algorithm guarantees finding the optimal shortest path when all edge weights are positive. Bellman-Ford algorithm, on the other hand, can handle negative edge weights and can detect negative cycles in the graph. It uses dynamic programming approaches with a time complexity of O(VE) which makes it slower than Dijkstra but more versatile. The algorithm works by relaxing all edges V-1 times, updating distances when shorter paths are found. In the Vth iteration, if any distance can still be improved, a negative cycle exists. These algorithms are fundamental in network routing protocols and GPS navigation systems."
     }
   ]
 }
